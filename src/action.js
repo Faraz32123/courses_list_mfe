@@ -9,4 +9,3 @@ export const setCourseList = (list) => ({
     type: types.SET_COURSES_LIST,
     payload: list,
 });
-  
