@@ -1,9 +1,9 @@
 import { React, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import * as actions from './action';
-
 import { Container } from '@edx/paragon';
-import styles from './coursesListPage.scss';
+
+import * as actions from './action';
+import './coursesListPage.css';
 
 const CoursesListPage = () => {
   const dispatch = useDispatch();
