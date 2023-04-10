@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const getRequest = (url) => {
+const getRequest = (url) => {
   return axios.get(url).then(
     (resp) => {
       return resp.data;
@@ -10,3 +10,5 @@ export const getRequest = (url) => {
     }
   );
 };
+
+export default getRequest;
