@@ -10,7 +10,6 @@ function* getCoursesList(action) {
       url = url + "?filterText=" + action.payload
     }
 
-    debugger;
     const apiData = yield getRequest(url)
     yield put(actions.setCourseList({ list: apiData }))
   } catch (error) {
