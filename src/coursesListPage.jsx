@@ -1,10 +1,9 @@
-/* eslint-disable */
 import { React, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import * as actions from './action';
 
 import { Container } from '@edx/paragon';
-import styles from './coursesListPage.css';
+import styles from './coursesListPage.scss';
 
 const CoursesListPage = () => {
   const dispatch = useDispatch();
