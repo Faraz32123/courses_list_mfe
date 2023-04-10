@@ -1,4 +1,4 @@
-import * as types from "./types";
+import * as types from './types';
 
 export const getCourseList = (filter) => ({
   type: types.GET_COURSES_LIST,

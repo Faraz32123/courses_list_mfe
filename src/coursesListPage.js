@@ -1,14 +1,14 @@
-import { React, useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import * as actions from "./action";
+import { React, useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import * as actions from './action';
 
-import { Container } from "@edx/paragon";
-import styles from "./coursesListPage.css";
+import { Container } from '@edx/paragon';
+import styles from './coursesListPage.css';
 
 const CoursesListPage = () => {
   const dispatch = useDispatch();
   const courses_list = useSelector((state) => state?.courses_list.list);
-  const [filterText, setFilterText] = useState("");
+  const [filterText, setFilterText] = useState('');
 
   const handleSearch = () => {
     dispatch(actions.getCourseList(filterText));
@@ -28,9 +28,9 @@ const CoursesListPage = () => {
       </Container>
       {courses_list &&
         courses_list.map((course) => (
-          <Container className="styleCard">
+          <Container className='styleCard'>
             <h1>Title : {course.display_name}</h1>
-            <p>Language : {course.language || "None"}</p>
+            <p>Language : {course.language || 'None'}</p>
           </Container>
         ))}
     </main>

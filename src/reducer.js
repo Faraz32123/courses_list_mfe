@@ -1,5 +1,5 @@
-import * as types from "./types";
-import { initialState } from "./init";
+import * as types from './types';
+import { initialState } from './init';
 
 export const coursesReducer = (state = initialState, action) => {
   switch (action.type) {

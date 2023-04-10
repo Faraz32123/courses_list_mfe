@@ -1,14 +1,14 @@
-import { call, put, takeLatest } from "redux-saga/effects";
-import { getRequest } from "./request";
-import * as types from "./types";
-import * as actions from "./action";
+import { call, put, takeLatest } from 'redux-saga/effects';
+import { getRequest } from './request';
+import * as types from './types';
+import * as actions from './action';
 
 function* getCoursesList(action) {
   try {
     var url =
-      "http://local.overhang.io/api/courses_list/list/" + action.payload;
+      'http://local.overhang.io/api/courses_list/list/' + action.payload;
     if (action.payload) {
-      url = url + "?filterText=" + action.payload;
+      url = url + '?filterText=' + action.payload;
     }
 
     const apiData = yield getRequest(url);
