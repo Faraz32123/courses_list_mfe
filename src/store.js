@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import createSagaMiddleware from 'redux-saga';
-import { feedbackListWatcher } from './saga';
+import { coursesListWatcher } from './saga';
 
 import { coursesReducer } from './reducer'
 
@@ -22,6 +22,6 @@ function configureStore(initialState) {
 }
 
 const store = configureStore();
-store.runSaga(feedbackListWatcher);
+store.runSaga(coursesListWatcher);
 
 export { store }

@@ -1,0 +1,11 @@
+.styleCard {
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px #ccc;
+    color: #1f7bed;
+    background-color: antiquewhite;
+    margin: 12px 0px;
+    padding: 4px 16px 20px 16px;
+    font-weight: 600;
+    font-size: 14;
+    width: 40%;
+}

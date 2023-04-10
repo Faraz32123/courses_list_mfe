@@ -1,8 +1,8 @@
 import * as types from "./types";
 
-export const getCourseList = () => ({
+export const getCourseList = (filter) => ({
     type: types.GET_COURSES_LIST,
-    payload: "",
+    payload: filter,
 });
 
 export const setCourseList = (list) => ({
