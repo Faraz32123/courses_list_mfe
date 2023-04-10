@@ -1,5 +1,5 @@
 export const initialState = {
-    courses_list: {
-        list: [],
-    }
-}
+  courses_list: {
+    list: [],
+  },
+};

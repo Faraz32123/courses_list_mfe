@@ -12,5 +12,5 @@ render(
       <CoursesListPage />
     </Provider>
   </BrowserRouter>,
-  document.getElementById("root"),
+  document.getElementById("root")
 );
