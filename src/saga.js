@@ -5,7 +5,7 @@ import * as actions from "./action"
 
 function* getCoursesList(action) {
   try {
-    var url = "http://local.overhang.io:8000/api/courses_list/list/" + action.payload
+    var url = "http://local.overhang.io/api/courses_list/list/" + action.payload
     if (action.payload) {
       url = url + "?filterText=" + action.payload
     }
