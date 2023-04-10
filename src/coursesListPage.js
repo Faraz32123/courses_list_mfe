@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { React, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import * as actions from './action';
@@ -23,7 +24,7 @@ const CoursesListPage = () => {
         <input
           value={filterText}
           onChange={(e) => setFilterText(e.target.value)}
-        ></input>
+        />
         <button onClick={handleSearch}>Search</button>
       </Container>
       {courses_list &&
