@@ -21,7 +21,7 @@ import Footer, {
 import { configure } from '@edx/frontend-platform/i18n';
 import appMessages from './i18n';
 import ExamplePage from './example/ExamplePage';
-import CoursesListPage from './coursesListPage';
+import CoursesListPage from './courseList/coursesListPage';
 
 import './index.scss';
 
@@ -34,7 +34,6 @@ subscribe(APP_READY, () => {
   ReactDOM.render(
     <AppProvider>
       <Header />
-      {/* <ExamplePage /> */}
       <CoursesListPage />
       <Footer />
     </AppProvider>,

@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from 'react';
 import { Container } from '@edx/paragon';
 
-import getRequest from "./request"
+import getRequest from "../request"
 import './coursesListPage.scss';
 
 const CoursesListPage = () => {
