@@ -7,22 +7,18 @@ import './coursesListPage.scss';
 const CoursesListPage = () => {
   const [coursesList, setCoursesList] = useState([]);
   const [filterText, setFilterText] = useState('');
-  debugger;
   var url = 'http://local.overhang.io/api/courses_list/list/';
   async function handleSearch() {
-    url = url + '?name=' + filterText;
-    const response = await getRequest(apiUrl);
+    if (filterText) {
+      url = url + '?filterText=' + filterText;
+    }
+    const response = await getRequest(url);
     setCoursesList(response);
-    debugger;
     url = 'http://local.overhang.io/api/courses_list/list/';
   }
 
   useEffect(() => {
-    async function fetchCourses() {
-      const response = await getRequest(url);
-      setCoursesList(response);
-    }
-    fetchCourses();
+    handleSearch();
   }, []);
 
   return (
