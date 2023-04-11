@@ -7,12 +7,13 @@ import './coursesListPage.scss';
 const CoursesListPage = () => {
   const [coursesList, setCoursesList] = useState([]);
   const [filterText, setFilterText] = useState('');
-
+  debugger;
   var url = 'http://local.overhang.io/api/courses_list/list/';
   async function handleSearch() {
     url = url + '?name=' + filterText;
     const response = await getRequest(apiUrl);
     setCoursesList(response);
+    debugger;
     url = 'http://local.overhang.io/api/courses_list/list/';
   }
 
